@@ -1,0 +1,16 @@
+---
+const social = [
+  { href: 'https://twitter.com', icon: '🐦' },
+  { href: 'https://facebook.com', icon: '📘' },
+  { href: 'https://instagram.com', icon: '📸' }
+];
+---
+// Icons above to be changed
+<footer class="bg-gray-800 text-white p-4 text-center">
+  <p>Follow us:</p>
+  <div class="flex justify-center gap-4 mt-2">
+    {social.map(s => (
+      <a href={s.href} target="_blank" rel="noopener noreferrer" class="text-2xl">{s.icon}</a>
+    ))}
+  </div>
+</footer>
