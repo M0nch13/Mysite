@@ -3,6 +3,13 @@ import Navigation from '../components/Navigation.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ScriptSender from '../components/script-sender.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+const pageTitle = "Home Page";
+---
+<BaseLayout>
+  <h2>My awesome blog subtitle</h2>
+</BaseLayout>
 ---
 <!DOCTYPE html>
 <html lang="en">
